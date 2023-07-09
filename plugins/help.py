@@ -17,7 +17,7 @@ async def _start(client, message):
             if user.status == "kicked":
                await client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/UniversalBotsSupport).",
+                   text="Desculpe senhor, você está proibido de me usar. Entre em contato [Contato](https://t.me/The_Panda_Official).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -25,11 +25,11 @@ async def _start(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Junte-se ao Meu Canal de Atualizações para usar este Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("Participe do Canal de Atualizações", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
@@ -42,11 +42,11 @@ async def _start(client, message):
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                           InlineKeyboardButton("Participe do Canal de Atualizações", url="https://t.me/botssaved"),
+                           InlineKeyboardButton("Suporte", url="https://t.me/The_Panda_Official")
                       ],
                      [
-                           InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                           InlineKeyboardButton("🧑‍💻Dev🧑‍💻", url="https://t.me/The_Panda_Official")
                      ]
                  ]
              ),
@@ -59,11 +59,11 @@ async def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                    InlineKeyboardButton("Participe do Canal de Atualizações", url="https://t.me/botssaved"),
+                    InlineKeyboardButton("Suporte", url="https://t.me/botssaved")
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                    InlineKeyboardButton("🧑‍💻Dev🧑‍💻", url="https://t.me/The_Panda_Official")
                 ]
             ]
         ),
@@ -72,7 +72,7 @@ async def _start(client, message):
         )
 
 
-@Client.on_message(filters.incoming & filters.command(['source_code']) & filters.private)
+@Client.on_message(filters.incoming & filters.command(['source_cxyzsj']) & filters.private)
 async def _source_code(client, message):
     await client.send_message(message.chat.id,
         text=tr.SC_MSG.format(message.from_user.first_name, message.from_user.id),
@@ -82,11 +82,11 @@ async def _source_code(client, message):
                     InlineKeyboardButton("Souce Code", url="https://github.com/Jigarvarma2005/ForceSub_Bot")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/botssaved"),
+                    InlineKeyboardButton("Support", url="https://t.me/The_Panda_Official")
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                    InlineKeyboardButton("🧑‍💻Dev🧑‍💻", url="https://t.me/The_Panda_Official")
                 ]
             ]
         ),
@@ -103,7 +103,7 @@ async def _help(client, message):
             if user.status == "kicked":
                await client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/UniversalBotsSupport).",
+                   text="Desculpe senhor, você está proibido de me usar. Entre em contato com o meu [Suporte](https://t.me/The_Panda_Official).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -111,11 +111,11 @@ async def _help(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Junte-se ao Meu Canal de Atualizações para usar este Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("Participe do Canal de Atualizações", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
@@ -125,7 +125,7 @@ async def _help(client, message):
         except Exception:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/UniversalBotsSupport).",
+                text="Ei usar este comando no meu pm. \nPara mais ajuda pergunte no meu [Suporte](https://t.me/The_Panda_Official).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
