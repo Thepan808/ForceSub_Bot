@@ -59,7 +59,7 @@ async def _check_member(client, message):
              reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Clique aqui e se inscreva no canal", url=channel_url)
+                    InlineKeyboardButton("Clique aqui! E se inscreva no canal", url=channel_url)
                 ],
                 [
                     InlineKeyboardButton("Me Desmute", callback_data="onUnMuteRequest")
