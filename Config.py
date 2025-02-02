@@ -2,7 +2,7 @@ import os
 
 class Config():
   #Get it from @botfather
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "6313626750:AAF8MfIrCKiWWez4l-2KxptqSIIK4xC_mJ4")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "7647308325:AAE1tguzwRjYjVQhv976GqkesOfS5RzI0II")
   # Your bot updates channel username without @ or leave empty
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "botssaved")
   # Heroku postgres DB URL
